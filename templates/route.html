@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Train No please</title> 
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Mobirise v3.9.2, mobirise.com">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="assets/images/new" type="image/x-icon">
+  <meta name="description" content="">
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic&amp;subset=latin">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+  <link rel="stylesheet" href="assets/bootstrap-material-design-font/css/material.css">
+  <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
+  <link rel="stylesheet" href="assets/tether/tether.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/animate.css/animate.min.css">
+  <link rel="stylesheet" href="assets/dropdown/css/style.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  
+  
+  
+</head>
+<body>
+<section id="menu-h">
+
+    <nav class="navbar navbar-dropdown bg-color transparent navbar-fixed-top">
+        <div class="container">
+
+            <div class="mbr-table">
+                <div class="mbr-table-cell">
+
+                    <div class="navbar-brand">
+                        <span class="navbar-logo"><span class="mbri-android mbr-iconfont mbr-iconfont-menu"></span></span>
+                        <a class="navbar-caption" href="">AndroZDi Production</a>
+                    </div>
+
+                </div>
+                <div class="mbr-table-cell">
+
+                    <button class="navbar-toggler pull-xs-right hidden-md-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
+                        <div class="hamburger-icon"></div>
+                    </button>
+
+                    <ul class="nav-dropdown collapse pull-xs-right nav navbar-nav navbar-toggleable-sm" id="exCollapsingNavbar">
+                    <li class="nav-item"><a class="nav-link link" href="{{ url_for('log') }}">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link link" href="{{ url_for('inde') }}">CONTACT US</a></li>
+                    <li class="nav-item dropdown open">
+                    <a class="nav-link link dropdown-toggle" aria-expanded="true" href = "" data-toggle="dropdown-submenu" > RAILWAY ENQUIERY</a>
+                      <div class="dropdown-menu">
+                      <a class="dropdown-item" href="{{ url_for('status') }}">LIVE RUNNING STATUS</a>
+                      <a class="dropdown-item" href="{{ url_for('pnra') }}">PNR STATUS</a>
+                      <a class="dropdown-item" href="{{ url_for('rout') }}">TRAIN ROUTE</a>
+                      <a class="dropdown-item" href="{{ url_for('seata') }}">SEAT AVAILABLITY</a>
+                      </div></li>
+                      <li class="nav-item dropdown">
+                      <a class="nav-link link dropdown-toggle" href="" aria-expanded="true" data-toggle="dropdown-submenu">LIVE</a>
+                      <div class="dropdown-menu">
+                      <a class="dropdown-item" href="{{ url_for('aajtak') }}">AAJ &nbsp;TAK LIVE</a>
+                      <a class="dropdown-item" href="{{ url_for('bollywood') }}">BOLLYWOOD NEWS LIVE</a>
+                      <a class="dropdown-item" href="{{ url_for('music') }}">LIVE MUSIC</a>
+                      </div></li>
+                      <li class="nav-item dropdown open">
+                    <a class="nav-link link dropdown-toggle" aria-expanded="true" href = "" data-toggle="dropdown-submenu" > SPECIAL</a>
+                      <div class="dropdown-menu">
+                      <a class="dropdown-item" href="{{ url_for('dk') }}">DK_MARRIAGE(NEW)</a>
+                      <a class="dropdown-item" href="https://hrikexpense.herokuapp.com">EXPENSE MANAGER</a>
+                      <a class="dropdown-item" href="{{ url_for('besties') }}">BESTIES</a>
+                      </div></li>                      
+                      </ul>
+                    <button hidden="" class="navbar-toggler navbar-close" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
+                        <div class="close-icon"></div>
+                    </button>
+
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+</section>
+
+<section class="mbr-section mbr-section-hero mbr-section-full mbr-parallax-background mbr-section-with-arrow mbr-after-navbar" id="header1-u" style="background-image: url(assets/images/jumbotron.jpg);">
+
+    
+
+    <div class="mbr-table-cell">
+
+        <div class="container">
+            <div class="row">
+                <div class="mbr-section col-md-10 col-md-offset-1 text-xs-center">
+
+                    <h1 class="mbr-section-title display-1">TRAIN ROUTE</h1>
+                    <p class="mbr-section-lead lead">
+                    <form action="route" method="get" id="formg" style="text-align: left;text-shadow: transparent; background-color : #E5DDDB">
+<p style="margin-top: 0; margin-bottom: 0; text-align: center;">&nbsp; </p>
+          <p style="margin-top: 3pt; margin-bottom: 3pt; text-align: center;">&nbsp;<b>Train no </b>&nbsp;<!--webbot bot="Validation" b-value-required="TRUE" i-minimum-length="5" i-maximum-length="5" --><input type="text" name="train" placeholder=" Enter Train no to search" style="font-family: serif; font-style: italic; border-style: solid; border-width: 1px; padding: 3px" size="40" maxlength="5" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <button type="submit" form="formg" value="Submit" onclick="verify()">Get Route
+          </button>
+                      
+
+                    </p>
+                     </div>
+            </div>
+        </div>
+    </div>
+
+   
+</section>
+
+<footer class="mbr-small-footer mbr-section mbr-section-nopadding" id="footer1-g" style="background-color: rgb(50, 50, 50); padding-top: 1.75rem; padding-bottom: 1.75rem;">
+    
+    <div class="container">
+        <p class="text-xs-center">Copyright (c) 2016 AndroZDI Production.</p>
+    </div>
+</footer>
+
+
+  <script src="assets/web/assets/jquery/jquery.min.js"></script>
+  <script src="assets/tether/tether.min.js"></script>
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/smooth-scroll/SmoothScroll.js"></script>
+  <script src="assets/viewportChecker/jquery.viewportchecker.js"></script>
+  <script src="assets/dropdown/js/script.min.js"></script>
+  <script src="assets/touchSwipe/jquery.touchSwipe.min.js"></script>
+  <script src="assets/jarallax/jarallax.js"></script>
+  <script src="assets/theme/js/script.js"></script>
+  
+  
+  <input name="animation" type="hidden">
+  </body>
+</html>
